@@ -1,0 +1,153 @@
+#header {
+    width: 100%;
+    min-height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+
+
+#header a {
+    font-size: 25px;
+    color: var(--red);
+}
+
+#header #btn-open{
+    right: 10px;
+    border: none;
+    background: none;
+position: absolute ;
+}
+
+#header #btn-close {
+    position: absolute; 
+    right: 10px;
+    background: none;
+    border: none;
+    top:10px;
+}
+.open-menu {
+    overflow: hidden;
+}
+
+#overlay {
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+
+
+.open-menu #overlay {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black75);
+    z-index: 4;
+    display:flex;
+}
+
+.open-menu #header .menu {
+    right: 0px;
+    text-align: center;
+}
+
+#header .menu {
+    transition: right 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    width: 300px;
+    height: 100vh;
+    background-color: var(--white);
+    position: fixed;
+    right: -330px;
+    top: 0;
+    z-index: 4;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#header .menu ul {
+    margin: 95px 0 0 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+#header .menu ul li {
+    padding: 14px 0;
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+}
+
+.open-menu #header .logo {
+    left: initial;
+    right: 87px;
+    transition: left 2s ease-in-out;
+    position: absolute;
+    z-index: 5;
+    right:101px;
+}
+
+@media (min-width:992px){
+
+    #header{
+        width:90%;
+    }
+    #header #btn-open, #btn-close{
+        display:none;
+    }
+
+    #header .menu {
+        width: 100%;
+        height: initial;
+        background-color: initial;
+        position: static;
+        right: initial;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    #header .menu > div {
+        width: 100%;
+    }
+
+    #header .menu ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #header .menu ul li {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: inherit;
+    }
+
+    
+
+    
+
+    #header .menu ul li a:hover {
+        color: var(--red);
+        transition: 0.5s;
+    }
+
+    #header .menu ul li a{
+        font-size: 19px;
+        color: var(--dark);
+    }
+
+    #header hr {
+        background-color: var(--gray);
+        height: 1px;
+        width: 100%;
+        border: none;
+        margin:0;
+    }
+}
