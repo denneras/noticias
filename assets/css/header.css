@@ -144,8 +144,8 @@ position: absolute ;
     }
 
     #header hr {
-        background-color: var(--gray);
-        height: 1px;
+        background-color: var(--red);
+        height: 6px;
         width: 100%;
         border: none;
         margin:0;

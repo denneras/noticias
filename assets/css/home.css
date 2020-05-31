@@ -89,6 +89,7 @@
 #home .articles img {
     width: 100%;
     height:25vh;
+    border-radius: 5px;
 
 }
 
@@ -114,6 +115,7 @@
 
 #home .articles .image-text p {
     font-size: 19px;
+    color:var(--gray);
 }
 
 #home .articles .image-text p a {
@@ -140,6 +142,7 @@
     #home .destak .column .notice-1{
         height:50%;
         margin: 0 15px 15px 15px;
+        border-radius: 5px;
     }
 
     #home .destak .column .notice-1:hover,
@@ -173,8 +176,14 @@
         width:50%;
         height:100%;
         margin:15px;
+        border-radius: 5px;
     }
 
+
+    #home .destak .notice-4,
+    #home .destak .notice-5{
+        border-radius: 5px;
+    }
 
 
     #home .destak .column-3 {
@@ -184,18 +193,37 @@
 
     #home .destak .column-3 .notice-6{
         margin-bottom: 0;
+        border-radius: 5px;
     }
 
     #home .home-container {
         flex-direction: row;
         justify-content: center;
         margin-top:10vh;
+        margin-bottom: 30px;
     }
 
     #home .articles{
         width:60%;
         margin-left:2vw;
         
+    }
+
+    #home .articles p {
+        font-size: 19px;
+        color: var(--gray);
+    }
+
+    #home .articles .image-text-column h2 a{
+        color: var(--red);
+    }
+
+    #home .articles .image-text-column h3 a{
+        color: var(--gray);
+    }
+
+    #home .articles .image-text-column p a {
+        color:var(--red);
     }
 
     #home .articles .image-text{
@@ -209,23 +237,36 @@
         text-align: justify;
     }
 
+
     #home .articles .image-text img {
         width: 20vw;
         height: 30vh;
+        border-radius: 5px;
     }
 
     #home .home-container .news {
         display:flex;
         width:20vw;
-        align-items: center;
+        align-items: normal;
+        padding-left: 5vw;
     }
 
-    #home .home-container .news h2 {
+    #home .home-container .news h3 a {
         color: var(--gray);
     }
 
+    #home .home-container  .news h2  {
+        color: var(--gray);
+    }
+    
+
     #home .home-container  .news h2 a {
         color: var(--red);
+    }
+
+    #home .home-container  .news div p{
+        margin-top: 0;
+        color: var(--gray);
     }
 
     #home hr {
@@ -237,12 +278,5 @@
         align-self: center;
     }
 
-    #home .home-container .news hr {
-        background-color: var(--gray);
-        height: 1px;
-        width: 50%;
-        border: none;
-        margin:0;
-    }
-
+   
 }
