@@ -90,6 +90,12 @@ position: absolute ;
     right:101px;
 }
 
+@media (min-width:576px){
+    #header a{
+        font-size: 43px;
+    }
+}
+
 @media (min-width:992px){
 
     #header{
