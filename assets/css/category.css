@@ -143,6 +143,11 @@
         color: var(--red);
     }
 
+    #category .articles .image-text p {
+        font-size: 19px;
+        color: var(--gray);
+    }
+
     #category hr {
         background-color: var(--gray);
         height: 1px;

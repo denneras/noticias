@@ -19,11 +19,23 @@
 #home .destak h1, h2, h3 {
     color: var(--white);
     margin:5px;
+    
+}
+
+
+
+#home .destak a{
+    color: var(--white);
+    font-size: 19px;
+}
+
+#home .destak h1 a{
+    font-size: 22px;
 }
 
 #home .destak .notice-1 {
     height: 30vh;
-    background-image: url("/assets/images/Coronavirus/covid-19.jpg");
+    background-image: url("/assets/images/Coronavirus/o que e o covid19/covid-19.jpg");
     background-size: cover;
     backdrop-filter: brightness(60%);
     display: flex;
@@ -324,6 +336,13 @@
     }
 
 
+    #home .articles img {
+        width: 100%;
+        height:40vh;
+        border-radius: 5px;
+        
+    
+    }
     
 
     #home .articles .image-text-column h2 a{

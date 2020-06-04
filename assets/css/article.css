@@ -20,6 +20,7 @@
 
 #article .content .article-text .text figure img{
     width:100%;
+    max-height: 430px;
 }
 
 #article .content .article-text .text figure figcaption{
@@ -110,7 +111,7 @@
     }
 
     #article .content .article-text .text {
-        margin-top: 5vh;
+        margin-top: 10vh;
     }
 
     #article .content .article-text .text p {
@@ -120,6 +121,10 @@
     #article .content .others {
         width: 40%;
        align-items: center;
+    }
+
+    #article .more .image-text .text h3 a {
+        color: var(--white);
     }
 
 
