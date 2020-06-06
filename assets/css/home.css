@@ -47,7 +47,7 @@
 
 #home .destak .notice-2 {
     height: 30vh;
-    background-image: url("/assets/images/brasil/brasil.jpg");
+    background-image: url("/assets/images/brasil/vacina/vacina.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@
 
 #home .destak .notice-3 {
     height: 30vh;
-    background-image: url("/assets/images/mundo/mundo.jpg");
+    background-image: url("/assets/images/mundo/foguete/spacex-banner.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -69,7 +69,7 @@
 
 #home .destak .notice-4 {
     height: 30vh;
-    background-image: url("/assets/images/esportes/esportes.jpg");
+    background-image: url("/assets/images/esportes/esportes pandemia/corrida-banner.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -80,7 +80,7 @@
 
 #home .destak .notice-5 {
     height: 30vh;
-    background-image: url("/assets/images/economia/economia.jpg");
+    background-image: url("/assets/images/economia/dolar/dolar.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -91,7 +91,7 @@
 
 #home .destak .notice-6 {
     height: 30vh;
-    background-image: url("/assets/images/tecnologia/tecnologia.jpg");
+    background-image: url("/assets/images/tecnologia/playstation/controle.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
