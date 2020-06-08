@@ -11,6 +11,7 @@
 #header a {
     font-size: 25px;
     color: var(--red);
+    font-family: fantasy;
 }
 
 #header #btn-open{
@@ -59,7 +60,7 @@ position: absolute ;
     height: 100vh;
     background-color: var(--white);
     position: fixed;
-    right: -330px;
+    right: -300px;
     top: 0;
     z-index: 4;
     flex-direction: column;
@@ -94,13 +95,22 @@ position: absolute ;
     #header a{
         font-size: 43px;
     }
+
+   
 }
 
 @media (min-width:992px){
 
     #header{
         width:90%;
+        box-shadow: 0 0 2.5em 0.5em rgba(204,204,204,0.5);
     }
+
+    #header a:hover{
+        color: var(--dark);
+        transition: 0.5s;
+    }
+
     #header #btn-open, #btn-close{
         display:none;
     }

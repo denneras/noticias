@@ -12,6 +12,10 @@
     font-size: 25px;
 }
 
+#article .content .article-text .text h2{
+    color:var(--dark);
+}
+
 #article .content .article-text .text p{
     color: var(--gray);
     font-size: 19px;
@@ -46,20 +50,25 @@
 
 #article .more .image-text .text{
     position: absolute;
-    margin-top: 22vh;
+    margin-top: 19vh;
+    margin-left: 10px;
 }
 
-#article .more .image-text .text h2{
+#article .more .image-text .text h2 a{
     color: var(--white);
     font-size: 24px;
 }
 
-#article .more .image-text .text h3 {
+#article .more .image-text .text h3 a{
     color: var(--white);
 }
 
 #article .content .more {
     margin-bottom: 3vh;
+}
+
+#article .more h3{
+    margin: 0;
 }
 
 @media (min-width:576px){
@@ -76,14 +85,19 @@
         margin-bottom: 3vh;
     }
 
-    #article .more .image-text .text h2 {
-        color: var(--white);
-        font-size: 29px;
+    
+
+    
+    #article .more .image-text .text {
+        position: absolute;
+        margin-top: 19vh;
+        margin-left: 10px;
     }
 
     #article .more h3 {
         color: var(--red);
         font-size: 23px;
+        margin: 0;
     }
 }
 
@@ -92,6 +106,7 @@
         align-items: center;
         background-color: var(--white);
         width: 90%;
+        box-shadow: 0 0 2.5em 0.5em rgba(204,204,204,0.5);
 
     }
 
@@ -110,9 +125,13 @@
         height:50vh;
     }
 
-    #article .content .article-text .text {
-        margin-top: 10vh;
+    #article .content .article-text .banner img{
+        width:100%;
+        border-radius: 5px;
+        height:50vh;
     }
+
+    
 
     #article .content .article-text .text p {
         font-size: 19px;
@@ -122,6 +141,12 @@
         width: 40%;
        align-items: center;
     }
+
+    #article .more .image-text .text {
+    position: absolute;
+    margin-top: 14vh;
+    margin-left: 5px;
+}
 
     #article .more .image-text .text h3 a {
         color: var(--white);
@@ -168,11 +193,21 @@
 
     #article .more .image-text .text {
         position: absolute;
-        margin-top: 20vh;
+        margin-top: 19vh;
+        margin-left: 5px;
     }
 
-    #article .more .image-text .text h2 {
+     
+
+    
+
+    #article .more .image-text .text h2 a{
+        color: var(--white);
         font-size: 18px;
+    }
+
+    #article .more .image-text .text h3{
+        margin: 0;
     }
 
     #article .more h3 {

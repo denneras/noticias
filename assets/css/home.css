@@ -16,21 +16,35 @@
     display:none;
 }
 
-#home .destak h1, h2, h3 {
-    color: var(--white);
-    margin:5px;
+
+#home .destak .column h3,
+#home .destak .column-2 h3,
+#home .destak .column-3 h3{
+    margin:0;
+}
+
+#home .destak .column h1,
+#home .destak .column-2 h2,
+#home .destak .column-3 h2
+{
     
+    margin: 5px 0 10px 0;
 }
 
 
-
-#home .destak a{
+#home .destak h3 a{
     color: var(--white);
-    font-size: 19px;
+    font-size: 17px;
+}
+
+#home .destak h2 a{
+    color: var(--white);
+    font-size: 21px;
 }
 
 #home .destak h1 a{
     font-size: 22px;
+    color:var(--white);
 }
 
 #home .destak .notice-1 {
@@ -43,6 +57,7 @@
     justify-content: flex-end;
     padding-left: 30px;
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 #home .destak .notice-2 {
@@ -54,39 +69,43 @@
     justify-content: flex-end;
     padding-left: 30px;
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 #home .destak .notice-3 {
     height: 30vh;
-    background-image: url("/assets/images/mundo/foguete/spacex-banner.jpg");
+    background-image: url("/assets/images/mundo/foguete/banner-2.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding-left: 30px;
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 #home .destak .notice-4 {
     height: 30vh;
-    background-image: url("/assets/images/esportes/esportes pandemia/corrida-banner.jpg");
+    background-image: url("/assets/images/esportes/banner-2.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding-left: 30px;
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 #home .destak .notice-5 {
     height: 30vh;
-    background-image: url("/assets/images/economia/dolar/dolar.jpg");
+    background-image: url("/assets/images/economia/dolar/dolar-banner1.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding-left: 30px;
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 #home .destak .notice-6 {
@@ -98,14 +117,32 @@
     justify-content: flex-end;
     padding-left: 30px;
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 #home .articles img {
     width: 100%;
     height:25vh;
     border-radius: 5px;
-    
+}
 
+#home .articles .image-text-column h3 a {
+    color: var(--gray);
+}
+
+#home .articles .image-text-column h2  {
+    color: var(--red);
+    margin: 5px 0 0 0;
+}
+
+#home .articles .image-text-column p {
+    font-size: 19px;
+    color:var(--gray);
+}
+
+#home .articles .image-text-column p a {
+    font-size: 19px;
+    color: var(--red);
 }
 
 #home hr {
@@ -118,10 +155,13 @@
     
 }
 
+#home .articles .image-text h2 {
+    margin: 5px 0 0 0;
+}
 
-
-#home .articles .image-text h2 a{
+#home .articles .image-text h2 a {
     color: var(--red);
+   
 }
 
 #home .articles .image-text h3 a{
@@ -138,23 +178,47 @@
     color: var(--red);
 }
 
+#home .articles .news{
+    display:none;
+} 
+
 @media (min-width:576px){
 
+    #home .destak {
+        height: 55vh;
+    }
     #home .destak div {
         border-radius: 5px;
     }
 
-   
-    #home .destak .column h3{
-        font-size: 24px;
+    #home .destak h1 a {
+        color: var(--white);
+        font-size: 23px;
     }
 
-    #home .destak .column h1{
+    #home .destak h2 a {
+        color: var(--white);
+        font-size: 23px;
+    }
+   
+    #home .destak .column h3,
+    #home .destak .column-2 h3,
+    #home .destak .column-3 h3{
+        font-size: 24px;
+        margin:0;
+    }
+
+    #home .destak .column h1,
+    #home .destak .column-2 h2,
+    #home .destak .column-3 h2{
         font-size: 40px;
+        
+        margin: 0 0 10px 0;
     }
 
     #home .destak .column h2{
         font-size: 35px;
+        
     }
     #home .destak .column-2 {
         flex-direction: row;
@@ -188,10 +252,26 @@
         
     }
 
-    #home .articles .image-text  h2 a,
-    #home .articles .image-text-column h2 a{
+    #home .home-container{
+        margin-top: 38vh;
+    }
+
+   
+
+    #home .articles .image-text-column img {
+        
+        height: 30vh;
+        border-radius: 5px;
+    }
+
+    #home .articles .image-text-column h2  {
         color: var(--red);
-        font-size: 34px;
+        font-size: 27px;
+    }
+
+    #home .articles .image-text  h2 a{
+        color: var(--red);
+        font-size: 27px;
     }
 
     #home .articles .image-text-column h3 a{
@@ -214,7 +294,7 @@
 
     #home .articles .image-text img {
         width: 30vw;
-        max-height: 25vh;
+        height: 22vh;
     }
 
    
@@ -236,13 +316,17 @@
    
 
 
-}
+
 
 @media (min-width:1100px){
     #home  {
         flex-direction: column;
         width:90%;
-    }
+        box-shadow: 0 0 2.5em 0.5em rgba(204,204,204,0.5);
+}
+
+
+    
 
     #home .destak {
         flex-direction: row;
@@ -338,16 +422,17 @@
 
     #home .articles img {
         width: 100%;
-        height:40vh;
+        height:46vh;
         border-radius: 5px;
         
     
     }
     
 
-    #home .articles .image-text-column h2 a{
+    #home .articles .image-text-column h2 {
         color: var(--red);
         font-size: 24px;
+        margin: 0;
     }
 
     #home .articles .image-text-column h3 a{
@@ -365,9 +450,13 @@
     }
 
     
-    #home .articles .image-text h2 a{
+    #home .articles .image-text h2 {
         color: var(--red);
-        font-size: 24px;
+        margin:0;
+    }
+
+    #home .articles .image-text h2 a{
+        font-size:22px;
     }
 
     #home .articles .image-text h3 a{

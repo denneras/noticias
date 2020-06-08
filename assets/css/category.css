@@ -1,5 +1,11 @@
+@media (min-width:320px){
+
 #category {
     flex-direction: column;
+    width:100%;
+}
+
+#category .category-container .content{
     width:100%;
 }
 
@@ -9,24 +15,24 @@
     border-radius: 5px;
 }
 
-#category .news{
+#category .category-container .news{
     display: none;
 }
 
-#category .content .banner{
+#category .content .banner-category{
     position: relative;
     justify-content: flex-end;
 }
 
-#category .content .banner img {
+#category .content .banner-category img {
     filter: brightness(0.7);
 }
 
-#category .content .banner .banner-text{
+#category .content .banner-category .banner-text{
     position: absolute;
 }
 
-#category .content .banner .banner-text h1{
+#category .content .banner-category .banner-text h1{
     color: var(--white);
     margin-left: 15px;
 }
@@ -53,13 +59,40 @@
     color: var(--red);
 }
 
+}
+
+
 @media (min-width:576px){
+   #category .content .news {
+       display: none;
+   }
+
+    #category .category-container .content {
+        width: 100%;
+        margin-top: 3vh;
+    }
+
     #category .category-container .articles .image-text{
         flex-direction: row;
+        align-items: center;
     }
+
+   
+
+   
+
+
 #category .articles img {
     width:40vw;
     height: auto;
+}
+
+#category .articles .image-text .text h2 {
+    margin: 5px 0 0 0;
+}
+
+#category .articles .image-text .text h3{
+    margin:0;
 }
 
 #category .articles .image-text .text {
@@ -73,12 +106,23 @@
 }
 
 @media (min-width:992px){
+    #category{
+        align-items: center;
+    }
+
     #category .category-container {
         flex-direction: row;
         justify-content: center;
         margin-top: 20px;
         margin-bottom: 30px;
-    }
+        background-color: var(--white);
+        width: 90%;
+        margin-top: 0;
+        box-shadow: 0 0 2.5em 0.5em rgba(204,204,204,0.5);
+}
+
+
+    
 
     #category .category-container .content{
         width:60%;
@@ -108,21 +152,21 @@
         color: var(--red);
     }
 
-    #category .content .banner{
+    #category .content .banner-category{
         position: relative;
         justify-content: flex-end;
     }
 
-    #category .content .banner .banner-text{
+    #category .content .banner-category .banner-text{
         position: absolute;
     }
 
-    #category .content .banner .banner-text h1{
+    #category .content .banner-category .banner-text h1{
         color: var(--white);
         margin-left: 15px;
     }
 
-    #category .content .banner img {
+    #category .content .banner-category img {
         width: 100%;
         height:40vh;
         border-radius: 5px;
