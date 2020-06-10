@@ -55,8 +55,8 @@ position: absolute ;
 }
 
 #header .menu {
-    transition: right 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-    width: 300px;
+    transition: right 1s cubic-bezier(0.55, -0.55, 0.27, 1.55);
+    width: 280px;
     height: 100vh;
     background-color: var(--white);
     position: fixed;
@@ -85,10 +85,7 @@ position: absolute ;
 .open-menu #header .logo {
     left: initial;
     right: 87px;
-    transition: left 2s ease-in-out;
-    position: absolute;
-    z-index: 5;
-    right:101px;
+   
 }
 
 @media (min-width:576px){
