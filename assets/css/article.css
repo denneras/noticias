@@ -69,6 +69,12 @@
 
 #article .more h3{
     margin: 0;
+
+}
+
+#article .content .article-text .text ul li{
+    color:var(--gray);
+    font-size: 19px;
 }
 
 @media (min-width:576px){
